@@ -54,7 +54,7 @@
                 if (allIns.map(a=>a.title.toLowerCase()).includes(input.value.toLowerCase())){
                   img.src = allIns[allIns.map(a=>a.title.toLowerCase()).indexOf(input.value.toLowerCase())].thumbnail
                   h3.innerHTML = input.value.toUpperCase()
-                  source.src = (allIns[allIns.map(a=>a.title.toLowerCase()).indexOf(input.value.toLowerCase())].sound).slice()
+                  source.src = allIns[allIns.map(a=>a.title.toLowerCase()).indexOf(input.value.toLowerCase())].sound
                   console.log(source.src)
                   audio.load()
                   audio.play()
